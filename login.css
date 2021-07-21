@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Pattaya;
+    src: url(../fonts-fuentes/Pattaya-Regular.ttf);
+}
+@media only screen and (max-width:600px){
+    .login__container {
+        background-color: transparent;
+        border: none !important;
+        padding: 0px;
+        width: 100%;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: transparent;
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62,5%;
+    font-family: Verdana;
+    color: white;
+}
+.logo {
+    font-family: Pattaya;
+    color: #A303A8;
+    width: 300px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.login__img {
+    height: 30px;
+    /*lo estilice utilizando una clase, pero despues lo estilizare utilizando otra forma de llamar a estas secciones*/
+}
+.header {
+    align-items: center;
+    background-color: #21c08b;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
+/*Otra forma de linear-gradient
+background: linear-gradient(to bottom, #defff5 0%, var(--color-primario) 80%, var(--color-azul) 100%);
+*/
+.login {
+    background: linear-gradient(#21C08B, #A303A8);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px)
+}
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 350px;
+    /*vamos a cambiar el display para cambiar el posicionamiento dentro del contenedor*/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label {
+    font-size: 0.9rem;
+}
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me a {
+    color:white;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+.login__container--social-media > div {
+    /*utilizar el > es una forma de decirle que estilice todos los div contenidos en la eyiqueta contenedora*/
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+/*comenzamos a estilizar los inputs y botones*/
+.login__container--social-media > div > img {
+    margin-right: 10px;
+}
+.login__container--register {
+    font-size: 0.9rem;
+}
+.login__container--register a, a {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+.input, .password, .name {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom:  2px solid white;
+    font-family: 'multi', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder {
+    color: white;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    /*paraque sea mas oscuro la lentra*/
+    font-family: 'multi', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    /*espacio entre letras*/
+    margin: 10px 0px;
+}
+/*comenzaremos con el footer*/
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #AB88FF;
+    height: 100px;
+    width: 100%
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
